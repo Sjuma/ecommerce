@@ -1,0 +1,19 @@
+{ % extends base.html}
+{ % load static % }
+{ % block content % }
+
+{{ product}}
+
+<form action="{% url 'reduce inventory' product.id %}" method="post">
+    <label for="Reduce inventory" > Reduce inventory </label>
+    <input type="number" name="reduce inventory" value="{{product.id}}"> 
+    <input type="submit" value="OK">
+
+   
+
+
+
+
+
+
+</form>
